@@ -1,0 +1,301 @@
+<!DOCTYPE HTML>
+
+<script type="text/javascript" src="jquery-2.0.3.min.js"></script>
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<link href="https://addtocalendar.com/atc/1.5/atc-style-blue.css" rel="stylesheet" type="text/css">
+<link href='https://fonts.googleapis.com/css?family=Gravitas+One&text=1234567' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="../styles/styles.css">
+
+<style type="text/css">
+
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+p {
+    padding-right: 40px; 
+    font-family: cursive;
+}
+
+
+
+.jSlots-wrapper {
+    position: relative;
+    overflow: hidden;
+    height: 20px;
+    display: inline-block;
+    border: 1px solid #999;
+
+}
+
+.slot {
+    float: center;
+}
+.logo {
+    margin-left: 200px;
+}
+
+.machine {
+    background-color: #03038c;
+    background-image: url('Resources/chrome_background.jpg');
+    padding: 20px;
+    display: inline-block;
+    width: 1070px;
+}
+
+.fancy .jSlots-wrapper {
+
+    float: left;
+    width: 300px;
+    height: 300px;
+    margin: 25px;
+    border: 3px solid #7070ae;
+
+}
+
+.fancy .slot li {
+    /*width: auto;*/
+    line-height: 300px;
+    text-align: center;
+    color:  #0000;
+    font-family: sans-serif;
+    border-left: 1px solid #999;
+    
+}
+
+
+
+
+.fancy .slot:first-child li {
+    border-left: none;
+}
+
+.fancy .slot li:nth-child(7) {
+    background-color: #0000;
+}
+.fancy .slot li:nth-child(6) {
+    background-color: #0000;
+}
+.fancy .slot li:nth-child(5) {
+    background-color: #0000;
+}
+.fancy .slot li:nth-child(4) {
+    background-color: #0000;
+}
+.fancy .slot li:nth-child(3) {
+    background-color: #0000;
+}
+.fancy .slot li:nth-child(2) {
+    background-color: #0000;
+}
+.fancy .slot li:nth-child(1),
+.fancy .slot li:nth-child(8) {
+    background-color: #0000;
+}
+
+.fancy .slot li span {
+    display: block;
+}
+
+
+body {
+ 
+    /*background-image: url('machine.png');*/
+    background-repeat: no-repeat;
+    background-size: 1105px;
+    padding-top: 65px;
+    padding-left: 13px;
+    background-color: black;
+
+}
+.btn {
+  background: #24bcd8;
+  background-image: -webkit-linear-gradient(top, #24bcd8, #2980b9);
+  background-image: -moz-linear-gradient(top, #24bcd8, #2980b9);
+  background-image: -ms-linear-gradient(top, #24bcd8, #2980b9);
+  background-image: -o-linear-gradient(top, #24bcd8, #2980b9);
+  background-image: linear-gradient(to bottom, #24bcd8, #2980b9);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  margin: 20px;
+  text-decoration: none;
+  text-align: center;
+  width: 300px;
+  cursor: pointer;
+
+}
+
+.addtocalendar {
+      padding: 10px 20px 10px 20px;
+      margin-left: 5px;
+      margin-bottom: 50px;
+      text-decoration: none;
+      text-align: center;
+      width: 330px;
+      cursor: pointer;
+  }
+
+.btn:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+
+</style>
+
+</head>
+
+<body>
+    <div>
+        <div class="logo">
+        <img src='socialtronlogo.png'>
+        </div>
+        <div class="machine">
+            <div class="fancy">
+                <ul class="slot">
+
+                    <li><span><img src="geoff.jpg" style="width:300px;height:300px;"></span></li>
+                    <li><span><img src="dave.jpg" style="width:300px;height:300px;"></span></li>
+                    <li><span><img src="coe.jpg" style="width:300px;height:300px;"></span></li>
+                    <li><span><img src="mad.jpg" style="width:300px;height:300px;"></span></li>
+                    <li><span><img src="dk.jpg" style="width:300px;height:300px;"></span></li>
+                    <li><span><img src="kat.jpg" style="width:300px;height:300px;"></span></li>
+                    <li><span><img src="rachel.jpg" style="width:300px;height:300px;"></span></li>
+                    <li><span><img src="austin.jpg" style="width:300px;height:300px;"></span></li>
+                    <li><span><img src="dawn.jpg" style="width:300px;height:300px;"></span></li>
+                    <li><span><img src="em.jpg" style="width:300px;height:300px;"></span></li>
+                    <li><span><img src="olivia.jpg" style="width:300px;height:300px;"></span></li>
+                    <li><span><img src="divy.png" style="width:300px;height:300px;"></span></li>
+                    <li><span><img src="chris.png" style="width:300px;height:300px;"></span></li>
+                    <li><span><img src="suz.jpg" style="width:300px;height:300px;"></span></li>
+                    <li><span><img src="kaleigh.jpg" style="width:300px;height:300px;"></span></li>
+                    <li><span><img src="kenny.png" style="width:300px;height:300px;"></span></li>
+                    <li><span><img src="katie.jpg" style="width:300px;height:300px;"></span></li>
+                    <li><span><img src="erin.png" style="width:300px;height:300px;"></span></li>
+                    <li><span><img src="mark.jpg" style="width:300px;height:300px;"></span></li>
+                    <li><span><img src="sara.png" style="width:300px;height:300px;"></span></li>
+                </ul>
+
+            </div>
+
+            <div class="fancy">
+                <ul class="slot">
+
+                    <li><span><img src="peets.jpg" style="width:300px;height:300px;"></span></li>
+                    <li><span><img src="starbucks.png" style="width:300px;height:300px;"></span></li>
+                    <li><span><img src="highdive.png" style="width:300px;height:300px;"></span></li>
+                    <li><span><img src="philz.jpg" style="width:300px;height:300px;"></span></li>
+                    <li><span><img src="ferrybuild.png" style="width:300px;height:300px;"></span></li>
+                    <li><span><img src="ritual.jpg" style="width:300px;height:300px;"></span></li>
+                    <li><span><img src="icecream.png" style="width:300px;height:300px;"></span></li>
+                    <li><span><img src="bluebottle.png" style="width:300px;height:300px;"></span></li>
+                    <li><span><img src="xroads.jpg" style="width:300px;height:300px;"></span></li>
+                    <li><span><img src="connect4.jpg" style="width:300px;height:300px;"></span></li>
+                </ul>
+            </div>
+
+
+            <div class="fancy">
+                <ul class="slot">
+
+                    <li><span><img src="q2.png" style="width:300px;height:300px;"></span></li>
+                    <li><span><img src="q3.png" style="width:300px;height:300px;"></span></li>
+                    <li><span><img src="q4.png" style="width:300px;height:300px;"></span></li>
+                    <li><span><img src="q5.png" style="width:300px;height:300px;"></span></li>
+                    <li><span><img src="q6.png" style="width:300px;height:300px;"></span></li>
+                    <li><span><img src="q7.png" style="width:300px;height:300px;"></span></li>
+                    <li><span><img src="q8.png" style="width:300px;height:300px;"></span></li>
+                    <li><span><img src="q9.png" style="width:300px;height:300px;"></span></li>
+                    <li><span><img src="q10.png" style="width:300px;height:300px;"></span></li>
+                    <li><span><img src="q11.png" style="width:300px;height:300px;"></span></li>
+                    <li><span><img src="q12.png" style="width:300px;height:300px;"></span></li>
+                </ul>
+            </div>
+        </div>
+        <div>
+          <div class="btn" id="playFancy" onClick="document.form1.reset();">Push me to WIN</div>
+            <div>
+                <span class="addtocalendar atc-style-blue"
+                        data-calendars="Google Calendar">       
+                    <var class="atc_event">
+                        <var class="atc_date_start">2017-05-04 10:00:00</var>
+                        <var class="atc_date_end">2017-05-04 11:00:00</var>
+                        <var class="atc_timezone">America/Los_Angeles</var>
+                        <var class="atc_title">Coffeetron Meet-up!</var>
+                        <var class="atc_description">We matched on the Coffeetron 3000, would you like to grab some coffee with me?</var>
+                        <var class="atc_location">San Francisco</var>
+                        <var class="atc_organizer">Coffeetron 3000</var>
+                        <var class="atc_organizer_email">aharshberger@ideo.com</var>
+                    </var>
+                </span>    
+            </div>        
+        </div>
+    </div>    
+
+ <script type="text/javascript">(function () {
+            if (window.addtocalendar)if(typeof window.addtocalendar.start == "function")return;
+            if (window.ifaddtocalendar == undefined) { window.ifaddtocalendar = 1;
+                var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+                s.type = 'text/javascript';s.charset = 'UTF-8';s.async = true;
+                s.src = ('https:' == window.location.protocol ? 'https' : 'http')+'://addtocalendar.com/atc/1.5/atc.min.js';
+                var h = d[g]('body')[0];h.appendChild(s); }})();
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+    <script src="../jquery.easing.1.3.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../jquery.jSlots.min.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" charset="utf-8">
+
+
+
+        $('.fancy .slot').jSlots({
+            number : 1,
+            winnerNumber : 1,
+            spinner : '#playFancy',
+            easing : 'easeOutSine',
+            time : 3000,
+            loops : 6,
+            onStart : function() {
+                $('.slot').removeClass('winner');
+            },
+            onWin : function(winCount, winners) {
+
+
+                $.each(winners, function() {
+                    this.addClass('winner');
+                });
+
+
+                if ( winCount === 1 ) {
+
+                } else if ( winCount > 1 ) {
+
+                }
+
+            }
+        });
+
+  document.getElementById("demo").innerHTML = "RESULT"
+
+    </script>
+
+
+</body>
+
+</html>
