@@ -1,14 +1,17 @@
 <!DOCTYPE HTML>
 
-<script type="text/javascript" src="jquery-2.0.3.min.js"></script>
+<script
+  src="https://code.jquery.com/jquery-2.0.3.min.js"
+  integrity="sha256-sTy1mJ4I/LAjFCCdEB4RAvPSmRCb3CU7YqodohyeOLo="
+  crossorigin="anonymous"></script>
 
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-<link href="https://addtocalendar.com/atc/1.5/atc-style-blue.css" rel="stylesheet" type="text/css">
+<!-- <link href="https://addtocalendar.com/atc/1.5/atc-style-blue.css" rel="stylesheet" type="text/css"> -->
 <link href='https://fonts.googleapis.com/css?family=Gravitas+One&text=1234567' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" type="text/css" href="../styles/styles.css">
+<!-- <link rel="stylesheet" type="text/css" href="../styles/styles.css"> -->
 
 <style type="text/css">
 
@@ -44,7 +47,7 @@ p {
 
 .machine {
     background-color: #03038c;
-    background-image: url('Resources/chrome_background.jpg');
+    background-image: url('chrome_background.jpg');
     padding: 20px;
     display: inline-block;
     width: 1070px;
@@ -169,34 +172,36 @@ body {
         <div class="machine">
             <div class="fancy">
                 <ul class="slot">
-
+                    <!--These are all the people and their photos. This list is used as an array to populate the slot -->
+                    <li><span><img src="elanna.jpg" style="width:300px;height:300px;"></span></li>
+                    <li><span><img src="benjamin.jpg" style="width:300px;height:300px;"></span></li>
+                    <li><span><img src="melissa.jpg" style="width:300px;height:300px;"></span></li>
+                    <li><span><img src="gloria.jpg" style="width:300px;height:300px;"></span></li>
+                    <li><span><img src="nancy.jpg" style="width:300px;height:300px;"></span></li>
+                    <li><span><img src="sara.jpg" style="width:300px;height:300px;"></span></li>
+                    <li><span><img src="may.jpg" style="width:300px;height:300px;"></span></li>
                     <li><span><img src="geoff.jpg" style="width:300px;height:300px;"></span></li>
                     <li><span><img src="dave.jpg" style="width:300px;height:300px;"></span></li>
                     <li><span><img src="coe.jpg" style="width:300px;height:300px;"></span></li>
                     <li><span><img src="mad.jpg" style="width:300px;height:300px;"></span></li>
-                    <li><span><img src="dk.jpg" style="width:300px;height:300px;"></span></li>
                     <li><span><img src="kat.jpg" style="width:300px;height:300px;"></span></li>
-                    <li><span><img src="rachel.jpg" style="width:300px;height:300px;"></span></li>
-                    <li><span><img src="austin.jpg" style="width:300px;height:300px;"></span></li>
                     <li><span><img src="dawn.jpg" style="width:300px;height:300px;"></span></li>
                     <li><span><img src="em.jpg" style="width:300px;height:300px;"></span></li>
                     <li><span><img src="olivia.jpg" style="width:300px;height:300px;"></span></li>
-                    <li><span><img src="divy.png" style="width:300px;height:300px;"></span></li>
+                    <li><span><img src="divya.png" style="width:300px;height:300px;"></span></li>
                     <li><span><img src="chris.png" style="width:300px;height:300px;"></span></li>
                     <li><span><img src="suz.jpg" style="width:300px;height:300px;"></span></li>
-                    <li><span><img src="kaleigh.jpg" style="width:300px;height:300px;"></span></li>
-                    <li><span><img src="kenny.png" style="width:300px;height:300px;"></span></li>
                     <li><span><img src="katie.jpg" style="width:300px;height:300px;"></span></li>
                     <li><span><img src="erin.png" style="width:300px;height:300px;"></span></li>
                     <li><span><img src="mark.jpg" style="width:300px;height:300px;"></span></li>
-                    <li><span><img src="sara.png" style="width:300px;height:300px;"></span></li>
+                    <li><span><img src="sara.jpg" style="width:300px;height:300px;"></span></li>
                 </ul>
 
             </div>
 
             <div class="fancy">
                 <ul class="slot">
-
+                    <!-- This is the list of places to go. It is used as an array to populate the location slot -->
                     <li><span><img src="peets.jpg" style="width:300px;height:300px;"></span></li>
                     <li><span><img src="starbucks.png" style="width:300px;height:300px;"></span></li>
                     <li><span><img src="highdive.png" style="width:300px;height:300px;"></span></li>
@@ -207,14 +212,15 @@ body {
                     <li><span><img src="bluebottle.png" style="width:300px;height:300px;"></span></li>
                     <li><span><img src="xroads.jpg" style="width:300px;height:300px;"></span></li>
                     <li><span><img src="connect4.jpg" style="width:300px;height:300px;"></span></li>
+                    <li><span><img src="pier28.jpg" style="width:300px;height:300px;"></span></li>
                 </ul>
             </div>
 
 
             <div class="fancy">
                 <ul class="slot">
-
-                    <li><span><img src="q2.png" style="width:300px;height:300px;"></span></li>
+                    <!-- This list is used to populate the topic slot --> 
+                    <li><span><img src="q1.png" style="width:300px;height:300px;"></span></li>
                     <li><span><img src="q3.png" style="width:300px;height:300px;"></span></li>
                     <li><span><img src="q4.png" style="width:300px;height:300px;"></span></li>
                     <li><span><img src="q5.png" style="width:300px;height:300px;"></span></li>
@@ -238,10 +244,10 @@ body {
                         <var class="atc_date_end">2017-05-04 11:00:00</var>
                         <var class="atc_timezone">America/Los_Angeles</var>
                         <var class="atc_title">Coffeetron Meet-up!</var>
-                        <var class="atc_description">We matched on the Coffeetron 3000, would you like to grab some coffee with me?</var>
+                        <var class="atc_description">We matched on the Socialtron 3000, would you like to grab some coffee with me?</var>
                         <var class="atc_location">San Francisco</var>
                         <var class="atc_organizer">Coffeetron 3000</var>
-                        <var class="atc_organizer_email">aharshberger@ideo.com</var>
+                        <var class="atc_organizer_email">emariniello@ideo.com</var>
                     </var>
                 </span>    
             </div>        
